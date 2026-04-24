@@ -29,6 +29,9 @@ jobs:
   build-snyk:
     name: "Job 2 — Install & Snyk"
     needs: sonarqube
+    permissions:
+      security-events: write    # 👈 ADDED
+      contents: read            # 👈 ADDED
     uses: caresync-org/template-ci/.github/workflows/template-build-snyk.yml@dev
     with:
       service_name: "doctor"
