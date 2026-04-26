@@ -80,4 +80,5 @@ const getDoctorByEmail = async (req, res) => {
 };
 
 module.exports = { addDoctor, getDoctors, getDoctorById, getDoctorByEmail };
+//add
 
